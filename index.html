@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>points table</title>
+    <meta name="description" content="points table" />
+    <meta name="author" content="SitePoint" />
+
+    <link rel="stylesheet" href="/index.css" />
+    <script src="/handlebars//handlebars-v4.7.6.js"></script>
+</head>
+
+<body>
+    <h2 class="title">POINTS TABLE</h2>
+    <div class="si-widget" data-wdtype="standings" data-seriesid="3978" data-season="13" data-teamid="1107"
+        data-lang="en" data-viewtype="page" data-loaded="true">
+        <div class="si-main-wrap">
+            <div class="si-standingWrap ">
+                <div class="si-plyrStastBody">
+                    <div class="si-tbl">
+                        <div class="si-tHead">
+                            <div class="si-tRow">
+                                <!-- <div class="si-tCel si-Pos"><span></span></div> -->
+                                <div class="si-tCel si-Pos">
+                                    <span class="si-fullName">Pos</span>
+                                    <span class="si-shortName">#</span>
+                                </div>
+                                <!-- <div class="si-tCel si-teamFlag"><span></span></div> -->
+                                <div class="si-tCel si-teamFlag ">
+                                    <span class="si-fullName">Teams</span>
+                                    <span class="si-shortName">Teams</span>
+                                </div>
+                                <!-- <div class="si-tCel si-teamName"><span></span></div> -->
+                                <div class="si-tCel si-teamName">
+                                    <span class="si-fullName">Teams</span>
+                                    <span class="si-shortName">Teams</span>
+                                </div>
+                                <!-- <div class="si-tCel si-Pld"><span></span></div> -->
+                                <div class="si-tCel si-Pld">
+                                    <span class="si-fullName">played</span>
+                                    <span class="si-shortName">pld</span>
+                                </div>
+                                <div class="si-tCel si-stnd-won">
+                                    <span class="si-fullName">won</span>
+                                    <span class="si-shortName">W</span>
+                                </div>
+                                <div class="si-tCel si-stnd-lost">
+                                    <span class="si-fullName">lost</span>
+                                    <span class="si-shortName">L</span>
+                                </div>
+                                <div class="si-tCel si-stnd-tied">
+                                    <span class="si-fullName">tied</span>
+                                    <span class="si-shortName">tied</span>
+                                </div>
+                                <div class="si-tCel si-NR">
+                                    <span class="si-fullName">N/R</span>
+                                    <span class="si-shortName">N/R</span>
+                                </div>
+                                <!-- <div class="si-tCel si-Netrr"><span></span></div> -->
+                                <div class="si-tCel si-Netrr">
+                                    <span class="si-fullName">nrr</span>
+                                    <span class="si-shortName">nrr</span>
+                                </div>
+                                <!-- <div class="si-tCel si-Pts"><span>pts</span></div> -->
+                                <div class="si-tCel si-Pts">
+                                    <span class="si-fullName">points</span>
+                                    <span class="si-shortName">pts</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="team-data" class="si-tBody">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="teamTemplate" type="test/x-handlebars-template">
+
+    {{#each this}}
+    
+        <div class="si-tRow " style="background:{{getColor this.short_name}}">
+            <div class="si-tCel si-Pos"><span>{{this.position}}</span></div>
+            <div class="si-tCel si-teamFlag" style="background-image:url(/static-assets/images/teams/1111.png?v=2.3)"><span></span></div>
+            <div class="si-tCel si-teamName">
+                <span class="si-fullName">{{this.name}}</span>
+                <span class="si-shortName">{{this.short_name}}</span>
+            </div>
+            <div class="si-tCel si-Pld"><span>{{sport_specific_keys.events_played}}</span></div>
+            <div class="si-tCel si-stnd-won"><span>{{sport_specific_keys.wins}}</span></div>
+            <div class="si-tCel si-stnd-lost"><span>{{sport_specific_keys.lost}}</span></div>
+            <div class="si-tCel si-stnd-tied"><span>{{sport_specific_keys.tied}}</span></div>
+            <div class="si-tCel si-NR"><span>{{sport_specific_keys.no_result}}</span></div>
+            <div class="si-tCel si-Netrr"><span>{{sport_specific_keys.net_run_rate}}</span></div>
+            <div class="si-tCel si-Pts"><span>{{sport_specific_keys.points}}</span></div>
+        </div>
+{{/each}}
+</script>
+<script src="/app.js"></script>
+</body>
+
+</html>

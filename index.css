@@ -1,0 +1,1467 @@
+.si-standingWrap {
+    max-width: 100%;
+    max-width: 1170px;
+    margin: 30px auto;
+  }
+  .si-standingWrap .si-plyrStastBody {
+    position: relative;
+    background: -webkit-linear-gradient(right, rgba(237, 237, 237, 0.1), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(right, rgba(237, 237, 237, 0.1), rgba(255, 255, 255, 0));
+    background: -ms-linear-gradient(right, rgba(237, 237, 237, 0.1), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(right, rgba(237, 237, 237, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(right, rgba(237, 237, 237, 0.1), rgba(255, 255, 255, 0));
+  }
+  .si-standingWrap .si-plyrStastBody .si-tHead {
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -15px;
+    background: url("/Standing_header.svg");
+  }
+  @media screen and (max-width: 480px) {
+    .si-standingWrap .si-plyrStastBody .si-tHead {
+      font-size: 12px;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tHead:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -18px;
+    background: url(/data/assets/Standing_header.svg) no-repeat center center;
+    -webkit-background-size: 103%;
+    -moz-background-size: 103%;
+    -ms-background-size: 103%;
+    -o-background-size: 103%;
+    background-size: 103%;
+    height: 75px;
+    width: 100%;
+  }
+
+  .title{
+      color:rgba(201, 19, 24, 0.9);
+      font-size: 28px;
+      font-family: "AcuminProBold", sans-serif;
+      margin-left: 5%;
+  }
+  @media screen and (max-width: 1024px) {
+    .si-standingWrap .si-plyrStastBody .si-tHead:before {
+      -webkit-background-size: 150%;
+      -moz-background-size: 150%;
+      -ms-background-size: 150%;
+      -o-background-size: 150%;
+      background-size: 150%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tHead:before {
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tHead .si-tCel {
+      padding: 15px 0 15px;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tHead .si-tCel.si-teamName .si-shortName {
+    visibility: hidden;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tHead .si-tCel.si-teamName .si-shortName {
+      visibility: visible;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tHead .si-tCel.si-teamFlag .si-fullName {
+    visibility: hidden;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tHead .si-tCel.si-teamFlag .si-shortName {
+    visibility: hidden;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tHead .si-tCel.si-teamFlag {
+      display: none;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tCel {
+    text-align: center;
+    position: relative;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tCel.si-teamFlag .si-fullName {
+    visibility: hidden;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tCel.si-teamFlag .si-shortName {
+    visibility: hidden;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tCel.si-teamFlag {
+      display: none;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tCel.si-teamName {
+    text-align: left;
+    padding-left: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tCel.si-teamName {
+      padding-left: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tCel.si-stnd-tied, .si-standingWrap .si-plyrStastBody .si-tCel.si-NR {
+      display: none !important;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tCel.si-Pld,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-stnd-won,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-stnd-lost,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-stnd-tied,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-NR,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-Netrr,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-Pts {
+    width: 8%;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tCel.si-Pld,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-stnd-won,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-stnd-lost,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-stnd-tied,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-NR,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-Netrr,
+  .si-standingWrap .si-plyrStastBody .si-tCel .si-Pts {
+      width: 8%;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tHead,
+  .si-standingWrap .si-plyrStastBody .si-tBody {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tHead .si-tCel,
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tCel {
+    flex-basis: 8%;
+    text-align: center;
+    position: relative;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tHead .si-tCel,
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tCel {
+      flex-basis: 15%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tHead .si-teamFlag,
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-teamFlag {
+      display: none;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tHead .si-tRow,
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tHead .si-teamName,
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-teamName {
+    flex-basis: 36%;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 1;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tHead .si-teamName,
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-teamName {
+      flex-basis: 15%;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody {
+    color: #796a6b;
+    font-family: "AcuminProRegular", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: -20px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tBody {
+      font-size: 12px;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow {
+    width: 100%;
+    background: -webkit-linear-gradient(to bottom, #efd19f 0%, white 100%);
+    background: -moz-linear-gradient(to bottom, #efd19f 0%, white 100%);
+    background: -ms-linear-gradient(to bottom, #efd19f 0%, white 100%);
+    background: -o-linear-gradient(to bottom, #efd19f 0%, white 100%);
+    background: linear-gradient(to bottom, #efd19f 0%, white 100%);
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow.active {
+    background: -webkit-linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    background: -moz-linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    background: -ms-linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    background: -o-linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    background: linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    color: #ffffff;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow.active .si-teamName {
+    color: #ffffff;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow.active .si-Pts {
+    color: #ffffff;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow.active .si-tCel {
+    position: relative;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow.active .si-tCel:first-child:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow.active .si-tCel:last-child:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    /*left: 0;*/
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -ms-linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow:first-child {
+    padding-top: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow:first-child .si-tCel {
+      padding-top: 10px;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow:first-child.active {
+    color: #ffffff;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow:first-child.active .si-teamName {
+    color: #ffffff;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow:first-child.active .si-Pts {
+    color: #ffffff;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tRow:first-child.active .si-tCel:after {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0px;
+    top: auto;
+    bottom: 0;
+    height: calc(100% + 20px);
+    width: 100%;
+    z-index: -1;
+    background: #e01e23;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-tCel {
+    position: relative;
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-teamName {
+    font-size: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tBody .si-teamName {
+      font-size: 12px;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-teamFlag {
+    width: 50px;
+    -webkit-background-size: 45%;
+    -moz-background-size: 45%;
+    -ms-background-size: 45%;
+    -o-background-size: 45%;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap .si-plyrStastBody .si-tBody .si-teamFlag {
+      -webkit-background-size: 90%;
+      -moz-background-size: 90%;
+      -ms-background-size: 90%;
+      -o-background-size: 90%;
+      background-size: 90%;
+    }
+  }
+  .si-standingWrap .si-plyrStastBody .si-tBody .si-Pts {
+    color: #e41c1e;
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+  }
+  
+  .si-standing-page .si-plyrStastBody {
+    position: relative;
+    background: #fafafa;
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead {
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 480px) {
+    .si-standing-page .si-plyrStastBody .si-tHead {
+      font-size: 12px;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #e41c1e;
+    height: 65px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tHead:before {
+      font-size: 14px;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead .si-tCel {
+    height: 65px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tHead .si-tCel {
+      padding: 15px 0 15px;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead .si-tCel.si-teamName .si-shortName {
+    visibility: hidden;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tHead .si-tCel.si-teamName .si-shortName {
+      visibility: visible;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead .si-tCel.si-teamFlag .si-fullName {
+    visibility: hidden;
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead .si-tCel.si-teamFlag .si-shortName {
+    visibility: hidden;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tHead .si-tCel.si-teamFlag {
+      display: none;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tCel {
+    text-align: center;
+    position: relative;
+  }
+  .si-standing-page .si-plyrStastBody .si-tCel.si-teamFlag .si-fullName {
+    visibility: hidden;
+  }
+  .si-standing-page .si-plyrStastBody .si-tCel.si-teamFlag .si-shortName {
+    visibility: hidden;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tCel.si-teamFlag {
+      display: none;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tCel.si-teamName {
+    text-align: left;
+    padding-left: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tCel.si-teamName {
+      padding-left: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tCel.si-stnd-tied, .si-standing-page .si-plyrStastBody .si-tCel.si-NR {
+      display: none !important;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tCel.si-Pld,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-stnd-won,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-stnd-lost,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-stnd-tied,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-NR,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-Netrr,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-Pts {
+    width: 8%;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tCel.si-Pld,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-stnd-won,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-stnd-lost,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-stnd-tied,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-NR,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-Netrr,
+  .si-standing-page .si-plyrStastBody .si-tCel .si-Pts {
+      width: 8%;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead {
+    height: 65px;
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead .si-tBody {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead .si-tBody .si-tRow {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .si-standing-page .si-plyrStastBody .si-tHead .si-tBody .si-tRow .si-tCel {
+    flex-basis: 8%;
+    text-align: center;
+    position: relative;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tHead .si-tBody .si-tRow .si-tCel {
+      flex-basis: 15%;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tCel {
+    flex-basis: 8%;
+    text-align: center;
+    position: relative;
+    height: 95px;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tBody .si-tCel {
+      flex-basis: 15%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tBody .si-teamFlag {
+      display: none;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-teamName {
+    flex-basis: 36%;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 1;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tBody .si-teamName {
+      flex-basis: 15%;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody {
+    color: #0b1237;
+    font-family: "AcuminProRegular", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tBody {
+      font-size: 12px;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow {
+    width: 100%;
+    position: relative;
+    background: #fafafa;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #d9d9d9;
+    width: 75%;
+    margin: 0 auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(left, #fafafa 2%, #d9d9d9 50%, #fafafa 98%);
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow.active {
+    background-image: linear-gradient(to right, #f1d186, #faf9f7);
+    border-top-left-radius: 20px;
+    font-family: "AcuminProBlack", sans-serif;
+    font-weight: normal;
+    color: #000000;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow.active .si-teamName {
+    color: #000000;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow.active .si-Pts {
+    color: #e41c1e;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow.active .si-tCel {
+    position: relative;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow.active .si-tCel:first-child:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow.active .si-tCel:last-child:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    /*left: 0;*/
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -ms-linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:first-child .si-tCel {
+      padding-top: 10px;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:first-child.active {
+    color: #ffffff;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:first-child.active .si-teamName {
+    color: #ffffff;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:first-child.active .si-Pts {
+    color: #ffffff;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:first-child.active .si-tCel:after {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0px;
+    top: auto;
+    bottom: 0;
+    height: calc(100% + 20px);
+    width: 100%;
+    z-index: -1;
+    background: #e01e23;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:last-child {
+    position: relative;
+    border-bottom: none;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:last-child:after {
+    display: none;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:last-child.active .si-teamName {
+    color: #ffffff;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:last-child.active .si-Pts {
+    color: #ffffff;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tRow:last-child .si-tCel {
+    position: relative;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-tCel {
+    position: relative;
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-teamName {
+    font-size: 16px;
+    color: #484848;
+    text-transform: uppercase;
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tBody .si-teamName {
+      font-size: 12px;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-teamFlag {
+    width: 50px;
+    -webkit-background-size: 45%;
+    -moz-background-size: 45%;
+    -ms-background-size: 45%;
+    -o-background-size: 45%;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standing-page .si-plyrStastBody .si-tBody .si-teamFlag {
+      -webkit-background-size: 90%;
+      -moz-background-size: 90%;
+      -ms-background-size: 90%;
+      -o-background-size: 90%;
+      background-size: 90%;
+    }
+  }
+  .si-standing-page .si-plyrStastBody .si-tBody .si-Pts {
+    color: #e41c1e;
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+  }
+  
+  .si-standingWrap-rhs {
+    width: 377px;
+    max-width: 100%;
+    margin: 0px auto;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap-rhs {
+      width: auto;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-fullName {
+    display: none;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-shortName {
+    display: block;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-Pos,
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-Pos {
+    flex-basis: 15% !important;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-teamFlag,
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-teamFlag {
+    flex-basis: 15% !important;
+    -webkit-background-size: 80%;
+    -moz-background-size: 80%;
+    -ms-background-size: 80%;
+    -o-background-size: 80%;
+    background-size: 80%;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-teamFlag,
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-teamFlag {
+      flex-basis: 12% !important;
+      -webkit-background-size: 60%;
+      -moz-background-size: 60%;
+      -ms-background-size: 60%;
+      -o-background-size: 60%;
+      background-size: 60%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-teamFlag,
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-teamFlag {
+      flex-basis: 16% !important;
+      -webkit-background-size: 70%;
+      -moz-background-size: 70%;
+      -ms-background-size: 70%;
+      -o-background-size: 70%;
+      background-size: 70%;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tHead {
+    position: relative;
+    font-family: "AcuminProMedium", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tHead:before {
+    background: url(../images/svgs/Standings_up_Patch-head.svg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    height: 50px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tHead {
+      -webkit-background-size: 101%;
+      -moz-background-size: 101%;
+      -ms-background-size: 101%;
+      -o-background-size: 101%;
+      background-size: 101%;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tHead {
+      font-size: 12px;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-tCel {
+    padding: 0;
+    height: 50px !important;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-tCel.si-teamName {
+    text-align: left;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-tCel.si-teamName .si-shortName {
+    visibility: hidden;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-tCel.si-teamFlag .si-fullName {
+    visibility: hidden;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-tCel.si-teamFlag .si-shortName {
+    visibility: visible;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tHead .si-tCel.si-teamFlag {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tCel {
+    flex-basis: 22% !important;
+    padding: 15px 0 22px;
+    text-align: center;
+    position: relative;
+    /*      &:last-child {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: 100%;
+        @include linearGradient(right, rgba($client-complementary-color, 0.1), rgba($white, 0));
+      }
+    }*/
+  }
+  @media screen and (max-width: 1200px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tCel {
+      padding: 10px 0;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tCel {
+      padding: 14px 0;
+      height: 50px !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tCel {
+      padding: 10px 0;
+      flex-basis: 8%;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tCel.si-teamName {
+    padding-left: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tCel.si-teamName {
+      flex-basis: 25%;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tCel.si-stnd-won, .si-standingWrap-rhs .si-plyrStastBody .si-tCel.si-stnd-tied, .si-standingWrap-rhs .si-plyrStastBody .si-tCel.si-NR {
+    display: none !important;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody {
+    color: #575759;
+    font-family: "AcuminProRegular", sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow.active {
+    background: -webkit-linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    background: -moz-linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    background: -ms-linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    background: -o-linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    background: linear-gradient(#ea2126, rgba(201, 19, 24, 0.9), #a70409);
+    color: #ffffff;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow.active .si-teamName {
+    color: #ffffff;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow.active .si-Pts {
+    color: #ffffff;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:first-child {
+    padding-top: 15px;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:first-child.active {
+    color: #ffffff;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:first-child.active .si-teamName {
+    color: #ffffff;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:first-child.active .si-Pts {
+    color: #ffffff;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:first-child .si-tCel {
+    padding-top: 30px;
+  }
+  @media screen and (max-width: 1200px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:first-child .si-tCel {
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child {
+    position: relative;
+  }
+  @media screen and (max-width: 992px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child {
+      height: 100%;
+      background-position: bottom;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child {
+      -webkit-background-size: calc(100% + 7px);
+      -moz-background-size: calc(100% + 7px);
+      -ms-background-size: calc(100% + 7px);
+      -o-background-size: calc(100% + 7px);
+      background-size: calc(100% + 7px);
+      background-position: top;
+    }
+  }
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child {
+      background-position: bottom;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child.active {
+    background: url(../images/svgs/Standings_down_PatchHover.svg) no-repeat center top;
+    -webkit-background-size: 101%;
+    -moz-background-size: 101%;
+    -ms-background-size: 101%;
+    -o-background-size: 101%;
+    background-size: 101%;
+    color: #ffffff;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child.active .si-teamName {
+    color: #ffffff;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child.active .si-Pts {
+    color: #ffffff;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child .si-tCel {
+    position: relative;
+    padding-top: 15px;
+  }
+  @media screen and (max-width: 992px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child .si-tCel {
+      padding-top: 10px;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child .si-tCel:last-child:after {
+    height: 80%;
+    right: 1px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tRow:last-child .si-tCel:last-child:after {
+      height: 100%;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-tCel {
+    position: relative;
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-teamName {
+    font-size: 15px;
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+    color: #e41c1e;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 992px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-teamName {
+      font-size: 12px;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-teamFlag {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  @media screen and (max-width: 767px) {
+    .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-teamFlag {
+      display: block;
+    }
+  }
+  .si-standingWrap-rhs .si-plyrStastBody .si-tBody .si-Pts {
+    font-size: 18px;
+  }
+  
+  /*# sourceMappingURL=wl-standing.css.map */
+  /* @charset "UTF-8"; */
+  .si-flexBox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  .si-main-wrap {
+    font-family: "AcuminProRegular", sans-serif;
+    font-weight: normal;
+  }
+  .si-main-wrap a {
+    text-decoration: none;
+  }
+  .si-main-wrap a:hover, .si-main-wrap a:active, .si-main-wrap a:focus {
+    text-decoration: none;
+  }
+  .si-main-wrap a:focus {
+    background: transparent;
+  }
+  .si-main-wrap ul {
+    padding: 0;
+    margin: 0;
+  }
+  .si-main-wrap ul li {
+    list-style: none;
+  }
+  .si-main-wrap em {
+    font-style: normal;
+  }
+  .si-main-wrap :hover,
+  .si-main-wrap :focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .si-main-wrap input:focus::-webkit-input-placeholder,
+  .si-main-wrap textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+  .si-main-wrap input:focus::-moz-placeholder,
+  .si-main-wrap textarea:focus::-moz-placeholder {
+    color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+  .si-main-wrap input:focus:-moz-placeholder,
+  .si-main-wrap textarea:focus:-moz-placeholder {
+    color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+  .si-main-wrap input:focus:-ms-input-placeholder,
+  .si-main-wrap textarea:focus:-ms-input-placeholder {
+    color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+  .si-main-wrap b,
+  .si-main-wrap strong {
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+  }
+  
+  .si-shortName {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    .si-shortName {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .si-fullName {
+      display: none;
+    }
+  }
+  
+  .bodyNoScroll {
+    overflow: hidden;
+  }
+  
+  .si-flexBox-reverse-row {
+    flex-direction: row-reverse;
+  }
+  
+  .si-tbl {
+    display: table;
+    width: 100%;
+  }
+  .si-tbl .si-tHead,
+  .si-tbl .si-tBody,
+  .si-tbl .si-tFoot {
+    display: table-header-group;
+  }
+  .si-tbl .si-tRow {
+    display: table-row;
+  }
+  .si-tbl .si-tCel {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .si-noDataFound {
+    min-height: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .jspContainer {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .jspPane {
+    position: absolute;
+  }
+  
+  .jspVerticalBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 100%;
+    background: red;
+  }
+  
+  .jspHorizontalBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: red;
+  }
+  
+  .jspCap {
+    display: none;
+  }
+  
+  .jspHorizontalBar .jspCap {
+    float: left;
+  }
+  
+  .jspTrack {
+    background: #dde;
+    position: relative;
+  }
+  
+  .jspDrag {
+    background: #bbd;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .jspHorizontalBar .jspTrack,
+  .jspHorizontalBar .jspDrag {
+    float: left;
+    height: 100%;
+  }
+  
+  .jspArrow {
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .jspArrow.jspDisabled {
+    cursor: default;
+    background: #80808d;
+  }
+  
+  .jspVerticalBar .jspArrow {
+    height: 16px;
+  }
+  
+  .jspHorizontalBar .jspArrow {
+    width: 16px;
+    float: left;
+    height: 100%;
+  }
+  
+  .jspVerticalBar .jspArrow:focus {
+    outline: none;
+  }
+  
+  .jspCorner {
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+  }
+  
+  * html .jspCorner {
+    margin: 0 -3px 0 0;
+  }
+  
+  /*_header Start_*/
+  .si-header-wrap {
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d3d3d3;
+    line-height: 1;
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width: 1024px) {
+    .si-header-wrap {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .si-header-wrap {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .si-header-wrap {
+      font-size: 17px;
+    }
+  }
+  
+  /*_DropDown Start_*/
+  .si-dropdown-wrap {
+    padding: 10px 0;
+  }
+  .si-dropdown-wrap ul {
+    justify-content: flex-end;
+  }
+  .si-dropdown-wrap li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .si-dropdown-wrap li:last-child {
+    padding-right: 0;
+  }
+  .si-dropdown-wrap .si-dropdown-header {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "AcuminProBold", sans-serif;
+    font-weight: normal;
+    color: #ed1c24;
+    padding-right: 10px;
+  }
+  @media screen and (max-width: 992px) {
+    .si-dropdown-wrap .si-dropdown-header {
+      font-size: 12px;
+    }
+  }
+  .si-dropdown-wrap .si-selectWrap {
+    font-family: "AcuminProLight", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000000;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ed1c24;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    .si-dropdown-wrap .si-selectWrap {
+      width: 130px;
+    }
+  }
+  .si-dropdown-wrap .si-selectWrap:after {
+    content: "";
+    font-family: "waf-icon-font" !important;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    color: #796a6b;
+  }
+  .si-dropdown-wrap .selectActive {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+  }
+  .si-dropdown-wrap .si-selectBox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /*_Button_*/
+  .si-action {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .si-btn-common {
+    font-family: "AcuminProMedium", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: #ed1c24;
+    color: #ffffff;
+    border-radius: 4px 0 14px 4px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .si-btn-common:before {
+    content: "";
+    background: #ed1c24;
+    border-radius: 0 0 100% 0;
+    height: 100%;
+    width: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    left: auto;
+    transform: skew(-10deg);
+    z-index: 1;
+  }
+  .si-btn-common:after {
+    position: absolute;
+    content: "";
+    background: #6d0004;
+    border-radius: 0 0 100% 0;
+    height: 100%;
+    width: 22px;
+    display: inline-block;
+    right: -16px;
+    left: auto;
+    transform: skew(-20deg);
+    position: absolute;
+    top: 0;
+  }
+  
+  .si-yetbat {
+    font-size: 16px;
+    font-family: "AcuminProRegular", sans-serif;
+    font-weight: normal;
+    color: #868686;
+  }
+  @media screen and (max-width: 767px) {
+    .si-yetbat {
+      font-size: 12px;
+    }
+  }
+  
+  /*loader*/
+  .si-loader-wrp {
+    position: relative;
+    height: 250px;
+    width: 100%;
+  }
+  
+  .loader {
+    position: absolute;
+    z-index: 3;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    list-style: none;
+  }
+  
+  .loder-svg {
+    background-image: url(/static-assets/images/cssimages/svg/logo-animation.svg);
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 130px;
+    margin: 0;
+    background-size: 100% auto;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: logo-rotate 3s 2s ease-in-out infinite alternate forwards;
+  }
+  
+  /* @keyframes logo-rotate {
+    0% {
+      transform: skewY(0deg) rotateY(0deg);
+    }
+    25% {
+      transform: skewY(10deg) rotateY(30deg);
+    }
+    50% {
+      transform: skewY(0deg) rotateY(0deg);
+    }
+    75% {
+      transform: skewY(-10deg) rotateY(-30deg);
+    }
+    100% {
+      transform: skewY(0deg) rotateY(0deg);
+    }
+  } */
+  
+  /*# sourceMappingURL=kingsPunjab-mc-common.css.map */
+    

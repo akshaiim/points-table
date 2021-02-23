@@ -1,0 +1,204 @@
+{
+  "standings": {
+    "sport": {
+      "series": {
+        "id": "3978",
+        "name": "Indian Premier League, 2020",
+        "short_name": "IPL, 2020"
+      },
+      "id": "1",
+      "name": "Cricket"
+    },
+    "last_updated": {
+      "value": "1/6/202112:23:51:934"
+    },
+    "language": {
+      "id": "1",
+      "value": "en"
+    },
+    "lookups": {
+      "entity": {
+        "is_qualified": "Is Qualified",
+        "id": "ID",
+        "name": "Team Name",
+        "short_name": "Team Short Name",
+        "position": "Position"
+      },
+      "sport_specific_keys": {
+        "net_run_rate": "Net Run Rate",
+        "points": "Points",
+        "events_played": "Matches Played",
+        "wins": "Wins",
+        "lost": "Lost",
+        "tied": "Tied",
+        "away_wins": "Away Wins",
+        "home_wins": "Home Wins",
+        "no_result": "No Result"
+      }
+    },
+    "stages": {
+      "stage": [
+        {
+          "group": [
+            {
+              "entities": {
+                "entity": [
+                  {
+                    "is_qualified": "true",
+                    "sport_specific_keys": {
+                      "net_run_rate": "+1.107",
+                      "points": "18",
+                      "events_played": "14",
+                      "wins": "9",
+                      "lost": "5",
+                      "tied": "0",
+                      "away_wins": "0",
+                      "home_wins": "0",
+                      "no_result": "0"
+                    },
+                    "id": "1111",
+                    "name": "Mumbai Indians",
+                    "short_name": "MI",
+                    "position": "1"
+                  },
+                  {
+                    "is_qualified": "true",
+                    "sport_specific_keys": {
+                      "net_run_rate": "-0.109",
+                      "points": "16",
+                      "events_played": "14",
+                      "wins": "8",
+                      "lost": "6",
+                      "tied": "0",
+                      "away_wins": "0",
+                      "home_wins": "0",
+                      "no_result": "0"
+                    },
+                    "id": "1109",
+                    "name": "Delhi Capitals",
+                    "short_name": "DC",
+                    "position": "2"
+                  },
+                  {
+                    "is_qualified": "true",
+                    "sport_specific_keys": {
+                      "net_run_rate": "+0.608",
+                      "points": "14",
+                      "events_played": "14",
+                      "wins": "7",
+                      "lost": "7",
+                      "tied": "0",
+                      "away_wins": "0",
+                      "home_wins": "0",
+                      "no_result": "0"
+                    },
+                    "id": "1379",
+                    "name": "Sunrisers Hyderabad",
+                    "short_name": "SRH",
+                    "position": "3"
+                  },
+                  {
+                    "is_qualified": "true",
+                    "sport_specific_keys": {
+                      "net_run_rate": "-0.172",
+                      "points": "14",
+                      "events_played": "14",
+                      "wins": "7",
+                      "lost": "7",
+                      "tied": "0",
+                      "away_wins": "0",
+                      "home_wins": "0",
+                      "no_result": "0"
+                    },
+                    "id": "1105",
+                    "name": "Royal Challengers Bangalore",
+                    "short_name": "RCB",
+                    "position": "4"
+                  },
+                  {
+                    "is_qualified": "false",
+                    "sport_specific_keys": {
+                      "net_run_rate": "-0.214",
+                      "points": "14",
+                      "events_played": "14",
+                      "wins": "7",
+                      "lost": "7",
+                      "tied": "0",
+                      "away_wins": "0",
+                      "home_wins": "0",
+                      "no_result": "0"
+                    },
+                    "id": "1106",
+                    "name": "Kolkata Knight Riders",
+                    "short_name": "KKR",
+                    "position": "5"
+                  },
+                  {
+                    "is_qualified": "false",
+                    "sport_specific_keys": {
+                      "net_run_rate": "-0.162",
+                      "points": "12",
+                      "events_played": "14",
+                      "wins": "6",
+                      "lost": "8",
+                      "tied": "0",
+                      "away_wins": "0",
+                      "home_wins": "0",
+                      "no_result": "0"
+                    },
+                    "id": "1107",
+                    "name": "Kings XI Punjab",
+                    "short_name": "KXIP",
+                    "position": "6"
+                  },
+                  {
+                    "is_qualified": "false",
+                    "sport_specific_keys": {
+                      "net_run_rate": "-0.455",
+                      "points": "12",
+                      "events_played": "14",
+                      "wins": "6",
+                      "lost": "8",
+                      "tied": "0",
+                      "away_wins": "0",
+                      "home_wins": "0",
+                      "no_result": "0"
+                    },
+                    "id": "1108",
+                    "name": "Chennai Super Kings",
+                    "short_name": "CSK",
+                    "position": "7"
+                  },
+                  {
+                    "is_qualified": "false",
+                    "sport_specific_keys": {
+                      "net_run_rate": "-0.569",
+                      "points": "12",
+                      "events_played": "14",
+                      "wins": "6",
+                      "lost": "8",
+                      "tied": "0",
+                      "away_wins": "0",
+                      "home_wins": "0",
+                      "no_result": "0"
+                    },
+                    "id": "1110",
+                    "name": "Rajasthan Royals",
+                    "short_name": "RR",
+                    "position": "8"
+                  }
+                ],
+                "type": "team"
+              },
+              "id": "",
+              "name": ""
+            }
+          ],
+          "type": "",
+          "type_id": "1",
+          "name": "League"
+        }
+      ]
+    }
+  }
+}
